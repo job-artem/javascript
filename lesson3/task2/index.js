@@ -9,8 +9,8 @@ console.log("0 to string is " + String(0));
 
 /* === */
 
-console.log("'17' to number is ", Number('17'));
-console.log("true to number is ");
+console.log("' 17 ' to number is " + Number(' 17 '));
+console.log("true to number is " + Number(true));
 console.log("false to number is ");
 console.log("null to number is ");
 console.log("undefined to number is ");
