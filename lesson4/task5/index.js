@@ -8,7 +8,6 @@ for (let i = m; i <= n; i++) {
             continue;
         } else {
             result = result + i;
-            continue;
         }
     } else if (i % 3 == 0) {
         if (i % 5 == 0) {
@@ -16,7 +15,6 @@ for (let i = m; i <= n; i++) {
             continue;
         } else {
             result = result - i;
-            continue;
         }
 
     } else if (i % 4 == 0) {
@@ -25,7 +23,6 @@ for (let i = m; i <= n; i++) {
             continue;
         } else {
             result = result * i;
-            continue;
         }
 
     } else if (i % 5 == 0) {
