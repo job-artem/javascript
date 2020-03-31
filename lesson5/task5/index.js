@@ -9,3 +9,4 @@ function getSum (a,b){
     }
     return sum;
 }
+getSum(3,5);
