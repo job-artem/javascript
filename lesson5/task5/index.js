@@ -8,7 +8,5 @@ const getSum = (a,b) => {
             continue;
         }
     }
-    console.log(sum);
     return sum;
-    
 }
