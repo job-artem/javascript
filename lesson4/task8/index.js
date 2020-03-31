@@ -4,4 +4,4 @@ for (let i = 1; i <= 1000; i++) {
 }
 let ost = sum % 1234;
 let natselo = (sum - ost) / 1234;
-natselo > ost ? console.log(true) : console.log(false);
+(natselo > ost) ? console.log('true'): console.log('false');
