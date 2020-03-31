@@ -1,7 +1,8 @@
 function getSum (a,b){
+    sum = 0;
     for(let i = a; i<=b; i++){
         if(i%2===0){
-            sum +=i;
+            sum = sum + i;
         }        
         else{
             continue;
@@ -9,4 +10,3 @@ function getSum (a,b){
     }
     return sum;
 }
-getSum(3,5);
