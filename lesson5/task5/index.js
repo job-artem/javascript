@@ -4,6 +4,9 @@ const getSum = (a,b) => {
         if(i%2===0){
             sum = sum + i;
         }    
+        else{
+            continue;
+        }
     }
     console.log(sum);
     return sum;
