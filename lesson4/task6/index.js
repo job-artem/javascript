@@ -3,6 +3,8 @@ for (let i = 0; i <= 1000; i++) {
     if (i % 2 === 1) {
         console.log('Found');
         sum = sum + i;
+    } else {
+        continue;
     }
 }
 if ((sum * 5) > 5000) {
