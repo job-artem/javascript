@@ -12,6 +12,10 @@ function removeDuplicates(array) {
                     j--;
                 }
             }
+            if (count > 0) {
+                array.splice(i, 1);
+                i--;
+            }
         }
         let new_array = [...rest] = array;
         return new_array;
