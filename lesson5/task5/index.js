@@ -1,4 +1,4 @@
-function getSum(m, n) {
+const getSum = function(m, n) {
     sum = 0;
     for (let i = m; i <= n; i++) {
         if (i % 2 === 0) {
