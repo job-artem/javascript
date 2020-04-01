@@ -1,10 +1,8 @@
-let getSum = (begin, end) => {
-    sum = 0;
-    for (let summator = begin; summator <= end; summator++) {
-        if (summator % 2 === 0) {
-            sum = sum + summator;
-        } else {
-            continue;
+function getSum(a, b) {
+    let sum = 0
+    for (let i = a; i <= b; i++) {
+        if (i % 2 === 0) {
+            sum = sum + i;
         }
     }
     return sum;
