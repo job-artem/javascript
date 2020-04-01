@@ -1,8 +1,8 @@
-const getSum = (m, n) => {
+const getSum = (begin, end) => {
     sum = 0;
-    for (let i = m; i <= n; i++) {
-        if (i % 2 === 0) {
-            sum = sum + i;
+    for (let summator = begin; i <= end; i++) {
+        if (summator % 2 === 0) {
+            sum = sum + summator;
         } else {
             continue;
         }
