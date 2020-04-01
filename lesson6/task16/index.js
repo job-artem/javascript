@@ -2,16 +2,17 @@ function removeDuplicates(array) {
     if (!Array.isArray(array)) {
         return null;
     }
-    if (Array.isArray(array)) {
-        for (i = 0; i < array.length - 1; i++) {
-            let count = 0;
-            for (j = i + 1; j < array.length; j++) {
-                if (array[i] === array[j]) {
-                    array.splice(j, 1);
-                    j--;
-                }
+    let new_arr = [];
+    for (let copy = 0; copy < array.length; copy++) {
+        new_arr[copy] = array[copy];
+    }
+    for (let i = 0; i < new_arr.length - 1; i++) {
+        for (let j = i + 1; j < new_arr.length; j++) {
+            if (new_arr[i] === new_arr[j]) {
+                new_arr.splice(j, 1);
+                j--;
             }
         }
-        return array;
     }
+    return new_arr;
 }
