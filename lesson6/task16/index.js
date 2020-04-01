@@ -12,6 +12,7 @@ function removeDuplicates(array) {
                 }
             }
         }
-        return array;
+        let new_array = [...rest] = array;
+        return new_array;
     }
 }
