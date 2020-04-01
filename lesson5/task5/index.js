@@ -1,10 +1,9 @@
-const getSum = (m,n) => {
+function getSum(m, n) {
     sum = 0;
-    for(let i = m; i<=n; i++){
-        if(i%2===0){
+    for (let i = m; i <= n; i++) {
+        if (i % 2 === 0) {
             sum = sum + i;
-        }    
-        else{
+        } else {
             continue;
         }
     }
