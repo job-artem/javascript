@@ -3,16 +3,14 @@ function increaseEvenEl(arr, delta) {
         return null;
     }
     if (Array.isArray(arr)) {
-        new_arr = [];
-        for (let el of arr) {
-            if (el % 2 === 0) {
-                el = el + delta;
-                new_arr.push(el);
+        for (let i = 0; i <= arr.length; i++) {
+            if (arr[i] % 2 === 0) {
+                arr[i] = arr[i] + delta;
             } else {
-                new_arr.push(el);
+                continue;
             }
         }
-        return new_arr;
+        return arr
     }
 
 }
