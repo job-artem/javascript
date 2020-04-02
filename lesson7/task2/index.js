@@ -1,5 +1,6 @@
 const sortDesc = numbers => {
-    numbers.sort((a, b) => b - a);
+    new_numbers = [...rest] = numbers;
+    new_numbers.sort((a, b) => b - a);
 
-    return numbers;
+    return new_numbers;
 }
