@@ -1,7 +1,5 @@
-const concatProps = (obj) => {
-    const arr = [];
-    for (let key in obj) {
-        arr.push(obj[key]);
-    }
-    return arr;
+const transformToObject = (arr) => {
+    const obj = {};
+    arr.forEach(el => obj[el] = el);
+    return obj;
 }
