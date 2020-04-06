@@ -5,7 +5,7 @@ const addPropertyV1 = (obj, key, value) => {
 
 const addPropertyV2 = (obj, key, value) => {
     const copy = {
-        key: value,
+        'id': value,
     };
     obj = Object.assign(obj, copy);
     return obj;
@@ -13,7 +13,7 @@ const addPropertyV2 = (obj, key, value) => {
 
 const addPropertyV3 = (obj, key, value) => {
     const copy = {
-        key: value,
+        'id': value,
     };
     copy = Object.assign(obj, copy);
     return copy;
