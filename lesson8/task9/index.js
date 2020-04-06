@@ -14,10 +14,10 @@ const compareObjects = (obj1, obj2) => {
         let counter = 0;
         for (let i = 0; i < keys1_arr.length; i++) {
             if (keys1_arr[i] !== keys2_arr[i]) {
-                counter++
+                counter++;
             }
             if (values1_arr[i] !== values2_arr[i]) {
-                counter++
+                counter++;
             }
         }
         if (counter === 0) {
