@@ -26,11 +26,3 @@ const addPropertyV4 = (obj, key, value) => {
     objClone[key] = value;
     return objClone;
 }
-
-const obj = {
-    name: 'Tester',
-    age: 21,
-}
-key = 'test';
-value = 'testValue';
-console.log(addPropertyV2(obj, key, value));
