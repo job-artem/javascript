@@ -11,9 +11,9 @@ const addPropertyV2 = (obj, key, value) => {
     return obj;
 }
 
-const addPropertyV3 = (obj, id, value) => {
-    const copy = {
-        [id]: value,
+const addPropertyV3 = (obj, key, value) => {
+    let copy = {
+        [key]: value,
     };
     copy = Object.assign(copy, obj);
     return copy;
