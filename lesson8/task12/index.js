@@ -1,9 +1,8 @@
 const getAdults = (obj) => {
-    copyObj = {...obj };
-    let returnObj = {};
-    for (key in copyObj) {
-        if (copyObj[key] >= 18) {
-            returnObj[key] = copyObj[key];
+    const returnObj = {};
+    for (key in obj) {
+        if (obj[key] >= 18) {
+            returnObj[key] = obj[key];
         }
     }
     return returnObj;
