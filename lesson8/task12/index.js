@@ -8,7 +8,7 @@ const getAdults = (obj) => {
     }
 
     for (let j = 0; j < obj_keys.length; j++) {
-        if (obj_values[j] >= 18) {
+        if (parseInt(obj_values[j]) >= 18) {
             ret_obj[obj_keys[j]] = obj_values[j];
         }
     }
