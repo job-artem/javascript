@@ -1,4 +1,4 @@
 const copyObj = (obj) => {
-    copy = {...obj };
+    const copy = {...obj };
     return copy;
 }
