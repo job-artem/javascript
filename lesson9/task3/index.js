@@ -2,9 +2,8 @@ const getCustomersList = (obj) => {
     if (Object.keys(obj).length === 0) {
         return [];
     }
-    const arrCustomers = Object.entries(obj);
     const arrFormatted = [];
-    arrCustomers.forEach(el => {
+    Object.entries(obj).forEach(el => {
         name = el[1].name;
         age = el[1].age;
         id = el[0];
