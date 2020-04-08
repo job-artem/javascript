@@ -30,6 +30,4 @@ const getCustomersList = (obj) => {
         arrCopy.splice(minAgeIndex, 1);
     }
     console.log(sortedArray);
-
 }
-getCustomersList(customers);
