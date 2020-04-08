@@ -12,8 +12,6 @@ const findMinAgeIndex = (arr) => {
 
 const getCustomersList = (obj) => {
     const arrCustomers = Object.entries(obj);
-    console.log(arrCustomers);
-    const objElem = {};
     const arrFormatted = [];
     arrCustomers.forEach(el => {
         name = el[1].name;
@@ -21,7 +19,6 @@ const getCustomersList = (obj) => {
         id = el[0];
         arrFormatted.push({ name, age, id });
     });
-    // console.log(arrFinal);
     arrCopy = [...arrFormatted];
     const sortedArray = [];
     while (arrCopy.length > 0) {
@@ -29,5 +26,4 @@ const getCustomersList = (obj) => {
         sortedArray.push(arrCopy[minAgeIndex]);
         arrCopy.splice(minAgeIndex, 1);
     }
-    console.log(sortedArray);
 }
