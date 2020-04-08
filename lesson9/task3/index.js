@@ -9,13 +9,10 @@ const findMinAgeIndex = (arr) => {
     }
     return index;
 }
-
 const getCustomersList = (obj) => {
-
     if (Object.keys(obj).length === 0) {
         return [];
     }
-
     const arrCustomers = Object.entries(obj);
     const arrFormatted = [];
     arrCustomers.forEach(el => {
@@ -24,12 +21,11 @@ const getCustomersList = (obj) => {
         id = el[0];
         arrFormatted.push({ name, age, id });
     });
-    const arrCopy = [...arrFormatted];
     const sortedArray = [];
-    while (arrCopy.length > 0) {
-        const minAgeIndex = findMinAgeIndex(arrCopy);
-        sortedArray.push(arrCopy[minAgeIndex]);
-        arrCopy.splice(minAgeIndex, 1);
+    while (arrFormatted.length > 0) {
+        const minAgeIndex = findMinAgeIndex(arrFormatted);
+        sortedArray.push(arrFormatted[minAgeIndex]);
+        arrFormatted.splice(minAgeIndex, 1);
     }
     return sortedArray;
 }
