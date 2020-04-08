@@ -24,7 +24,7 @@ const getCustomersList = (obj) => {
         id = el[0];
         arrFormatted.push({ name, age, id });
     });
-    arrCopy = [...arrFormatted];
+    const arrCopy = [...arrFormatted];
     const sortedArray = [];
     while (arrCopy.length > 0) {
         const minAgeIndex = findMinAgeIndex(arrCopy);
