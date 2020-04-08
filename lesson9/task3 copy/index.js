@@ -1,4 +1,8 @@
 const getCustomersList = (obj) => {
+    if (Object.keys(obj).length === 0) {
+        return [];
+    }
+
     const formattedArray = [];
     for (let key in obj) {
         const id = key;
