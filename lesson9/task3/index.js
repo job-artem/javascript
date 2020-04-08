@@ -1,14 +1,3 @@
-const findMinAgeIndex = (arr) => {
-    let min = arr[0].age;
-    let index = 0;
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i].age < min) {
-            min = arr[i].age;
-            index = i;
-        }
-    }
-    return index;
-}
 const getCustomersList = (obj) => {
     if (Object.keys(obj).length === 0) {
         return [];
@@ -28,4 +17,16 @@ const getCustomersList = (obj) => {
         arrFormatted.splice(minAgeIndex, 1);
     }
     return sortedArray;
+}
+
+const findMinAgeIndex = (arr) => {
+    let min = arr[0].age;
+    let index = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i].age < min) {
+            min = arr[i].age;
+            index = i;
+        }
+    }
+    return index;
 }
